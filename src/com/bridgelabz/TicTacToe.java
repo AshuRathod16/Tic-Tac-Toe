@@ -21,11 +21,20 @@ public class TicTacToe {
         return scanner.next().toUpperCase().charAt(0);
     }
 
+    public static void tictactoe() {
+        for (int i = 0; i < gameBoard.length; i++) {
+
+            gameBoard[i] = ' ';
+        }
+    }
+
 
     public static void main(String[] args) {
         System.out.println("Welcome to Tic Tac Toe game");
+        tictactoe();
         showBoard();
         user();
+
 
     }
 
