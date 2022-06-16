@@ -32,7 +32,6 @@ public class TicTacToe {
         System.out.println(gameBoard[3] + " | " + gameBoard[4] + " | " + gameBoard[5]);
         System.out.println(gameBoard[6] + " | " + gameBoard[7] + " | " + gameBoard[8]);
     }
-
     public static void comLocation() {
         boolean flag = false;
         System.out.println("Player choose [0-8]");
@@ -115,8 +114,16 @@ public class TicTacToe {
         declareArray();
         showBoard();
         user(scanner);
-        comLocation();
+        int toss, wonToss;
+        toss = (int) (Math.random() * 2);
+        if (toss == 1) {
+            System.out.println("Player win the toss");
+        } else {
+            System.out.println("Computer win the toss");
+        }
+        comLocation() ;
     }
 
- }
+
+}
 
